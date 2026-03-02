@@ -1,0 +1,93 @@
+.nf-container {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+font-family: "Inter", Arial, sans-serif;
+padding: 20px;
+}
+
+.nf-card {
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(18px);
+border-radius: 24px;
+padding: 50px 40px;
+text-align: center;
+color: white;
+max-width: 420px;
+width: 100%;
+box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+animation: fadeIn 0.6s ease;
+}
+
+.nf-emoji {
+font-size: 64px;
+margin-bottom: 10px;
+animation: float 3s ease-in-out infinite;
+}
+
+.nf-title {
+font-size: 72px;
+margin: 0;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+.nf-subtitle {
+margin-top: 5px;
+font-weight: 600;
+}
+
+.nf-text {
+margin: 20px 0 30px;
+opacity: 0.9;
+line-height: 1.5;
+}
+
+.nf-button {
+display: inline-block;
+padding: 12px 26px;
+border-radius: 999px;
+background: white;
+color: #4f46e5;
+font-weight: bold;
+text-decoration: none;
+transition: all 0.25s ease;
+}
+
+.nf-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Animations */
+
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px) scale(0.96);
+}
+to {
+opacity: 1;
+transform: translateY(0) scale(1);
+}
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+.nf-title {
+font-size: 56px;
+}
+
+.nf-card {
+padding: 40px 25px;
+}
+}
