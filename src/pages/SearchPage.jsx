@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./SearchPage.css";
 
-const BASE_URL = "http://localhost:8081";
+const BASE_URL = "https://upload-server-crv8.onrender.com";
 
 function SearchPage() {
 const [mobile, setMobile] = useState("");
