@@ -17,6 +17,7 @@ function App() {
       <Route path="/admin/uploads" element={<UploadPage/>} /> 
      <Route path="/admin/users" element={<UsersPage />} />
      <Route path="/search" element={<SearchPage />} />
+     <Route path="*" element={<NotFoundPage />} />
       </Routes>
      
     </div>
